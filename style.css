@@ -124,22 +124,30 @@ main .mleft{
     display:flex;
     flex-direction: column;
     align-items:flex-start;
-    padding:0 1rem;
+    padding-left: 4px;
 
 }
 main .mright{
     display:flex;
     width:85%;
     flex-direction: column;
-    padding:0 1rem;
+    padding:0 0.5rem;
+    
 }
-
+.mright:last-child{
+    margin-bottom: 50rem;
+}
 .row{
     display: flex;
     flex-direction: column;
     width:100%;
 
 }
+
+.rowbox:last-child{
+    margin-bottom: 10rem;
+}
+
 .row a{
     width:100%;
     text-decoration:none;
@@ -212,5 +220,30 @@ main .mright{
         display: none;
     }
 
+    body{
+        overflow: auto;
+    }
     
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    main .mleft{
+        display: none;
+    }
+    main .mright{
+        width: 100%;
+    }
+    .rowbox{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .box{
+        width: 100%;
+        padding: 0;
+
+    }
+
+
 }
